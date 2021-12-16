@@ -1,0 +1,45 @@
+%nav-item {
+	margin: 35px;
+	font-size: 1.6rem;
+	text-decoration: none;
+	border: 3px solid darken($color-600, 20%);
+	padding: 1.5vh 3vw;
+	border-radius: 10px;
+	transform: scale(1);
+	font-family: $fontMain;
+}
+
+nav .nav-item a {
+	@extend %nav-item;
+	color: $color-100;
+	background-image: linear-gradient(to top, $color-600, lighten($color-600, 10%));
+	transition: all 0.5s ease;
+
+	&:hover {
+		color: $color-900;
+		background-image: linear-gradient(to top, $color-400, lighten($color-400, 20%));
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+nav li {
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		transform: scale(1.2);
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+nav a.active {
+	@extend %nav-item;
+	color: $color-900;
+	background-image: linear-gradient(to top, $color-400, lighten($color-400, 20%));
+	;
+
+	&:hover {
+		color: current;
+		background-color: current;
+		border: 3 solid darken($color-400, 15%);
+	}
+}

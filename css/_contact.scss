@@ -1,0 +1,54 @@
+#contact-form {
+    text-align: center;
+    height: 90vh;
+    margin: 2rem auto;
+
+    label,
+    input,
+    textarea {
+        font-size: 1.3rem;
+    }
+
+    input[type="button"] {
+        padding: 15px;
+        border: 3px solid darken($color-600, 15%);
+        border-radius: 20px;
+        color: $color-100;
+        background-color: $color-600;
+    }
+
+    input,
+    textarea {
+        padding: 15px;
+        color: $color-100;
+        background-color: $color-600;
+        border: 2px solid darken($color-600, 15%);
+        border-top: none;
+        border-right: none;
+
+        &::placeholder {
+            color: $color-900;
+        }
+    }
+
+    textarea {
+        width: 400px;
+        height: 250px;
+    }
+
+
+}
+
+small {
+    visibility: hidden;
+
+    &.push-center {
+        visibility: visible;
+    }
+}
+
+
+.error {
+    color: red;
+    visibility: visible;
+}

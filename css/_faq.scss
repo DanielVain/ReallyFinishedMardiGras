@@ -1,0 +1,42 @@
+#faq-section {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+    h2 {
+        margin-top: 15px;
+        font-size: 2.3rem;
+    }
+
+    #accordion-div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+.accordion {
+    border: 3px solid $color-400;
+    font-family: $fontText;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    color: $color-900;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease;
+
+    &.active,
+    &:hover {
+        background-image: linear-gradient(to top, $color-400, lighten($color-400, 15%));
+    }
+}
+
+.panel {
+    text-align: left;
+    padding: 18px;
+    background-color: lighten($color-400, 25%);
+    display: none;
+    overflow: hidden;
+}
