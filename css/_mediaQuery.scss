@@ -18,9 +18,11 @@
     #mayor-section {
         display: block;
         text-align: center;
+
         img {
-           width : 70vw;
-            aspect-ratio:1;
+            width: 50%;
+            height: 50%;
+        }
     }
 
     #sponsors {
@@ -50,7 +52,6 @@
     }
 
     .navbar {
-
         ul {
             flex-direction: column;
             display: none !important;

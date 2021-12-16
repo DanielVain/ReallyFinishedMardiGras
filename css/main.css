@@ -685,6 +685,11 @@ footer.footer a {
     display: block;
     text-align: center;
   }
+  .flexbox img,
+  #mayor-section img {
+    width: 50%;
+    height: 50%;
+  }
   #sponsors #sponsors-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
